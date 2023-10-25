@@ -30,7 +30,7 @@
 
 
     <ItemGroup>
-      <Compile Update="FileManager.axaml.cs">
+      <Compile Update="BottomTabs.axaml.cs">
         <DependentUpon>FileManager.axaml</DependentUpon>
         <SubType>Code</SubType>
       </Compile>

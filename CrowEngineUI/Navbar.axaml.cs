@@ -2,11 +2,11 @@
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
-namespace CrowEngineUI.Assets;
+namespace CrowEngineUI;
 
-public partial class FileManager : UserControl
+public partial class Navbar : UserControl
 {
-    public FileManager()
+    public Navbar()
     {
         InitializeComponent();
     }
