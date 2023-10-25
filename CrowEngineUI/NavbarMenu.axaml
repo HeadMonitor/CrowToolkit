@@ -5,27 +5,32 @@
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="CrowEngineUI.NavbarMenu">
    
-    <Menu DockPanel.Dock="Top">
-        <!-- File Menu -->
-        <MenuItem Header="File">
-            <MenuItem Header="New" />
-            <MenuItem Header="Open"/>
-            <MenuItem Header="Save"/>
-            <MenuItem Header="Exit"/>
-        </MenuItem>
+    <Grid>
+        <Menu DockPanel.Dock="Top">
+            <!-- File Menu -->
+            <MenuItem Header="File">
+                <MenuItem Header="New Project" Click="NewProject"/>
+                <MenuItem Header="Open Project" Click="OpenProject"/>
+                <MenuItem Header="Save" Click="Save"/>
+                <MenuItem Header="Exit" Click="Exit"/>
+            </MenuItem>
 
-        <!-- Edit Menu -->
-        <MenuItem Header="Edit">
-            <MenuItem Header="Cut"/>
-            <MenuItem Header="Copy"/>
-            <MenuItem Header="Paste"/>
-        </MenuItem>
+            <!-- Edit Menu -->
+            <MenuItem Header="Edit">
+            </MenuItem>
 
-        <!-- Tools Menu -->
-        <MenuItem Header="Tools">
-            <MenuItem Header="Compressor"/>
-            <MenuItem Header="Converter"/>
-        </MenuItem>
-    </Menu>
-    
+            <!-- Tools Menu -->
+            <MenuItem Header="Tools">
+                <MenuItem Header="Compressor"/>
+                <MenuItem Header="Converter"/>
+            </MenuItem>
+            
+            <!-- Help Menu -->
+            <MenuItem Header="Help">
+                <MenuItem Header="About" />
+                <MenuItem Header="Credits" />
+            </MenuItem>
+        </Menu>
+        
+    </Grid>
 </UserControl>

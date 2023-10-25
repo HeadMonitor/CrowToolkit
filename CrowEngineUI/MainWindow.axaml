@@ -3,21 +3,21 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:crowEngineUi="clr-namespace:CrowEngineUI"
+        xmlns:assets="clr-namespace:CrowEngineUI.Assets"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="CrowEngineUI.MainWindow"
-        
+
         Title="CrowEngine"
-        Icon=""
-        ExtendClientAreaToDecorationsHint="True">
+        Icon="">
     
-    <Grid RowDefinitions="Auto,*">
-        <crowEngineUi:NavbarMenu 
-            Background="#1E1E1E" 
-            PointerPressed="InputElement_OnPointerPressed" 
-            PointerMoved="InputElement_OnPointerMoved"
-            PointerReleased="InputElement_OnPointerReleased"/>
+    <Grid RowDefinitions="Auto, *, 1, 125">
+        <crowEngineUi:NavbarMenu Background="#1E1E1E"/>
         
-        <crowEngineUi:MonoGameControl Grid.Row="0" />
+        <crowEngineUi:MonoGameControl Grid.Row="1"/>
+        
+        <GridSplitter Grid.Row="2" Background="#1E1E1E" ResizeDirection="Rows"/>
+        
+        <assets:FileManager Grid.Row="3"/>
     </Grid>
     
 </Window>

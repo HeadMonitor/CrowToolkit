@@ -27,4 +27,12 @@
     <ItemGroup>
       <Folder Include="Assets\" />
     </ItemGroup>
+
+
+    <ItemGroup>
+      <Compile Update="FileManager.axaml.cs">
+        <DependentUpon>FileManager.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+    </ItemGroup>
 </Project>

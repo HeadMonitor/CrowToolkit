@@ -3,9 +3,13 @@
   <component name="AvaloniaProject">
     <option name="projectPerEditor">
       <map>
+        <entry key="CrowEngineUI/App.axaml" value="CrowEngineUI/CrowEngineUI.csproj" />
+        <entry key="CrowEngineUI/Assets/FileManager.axaml" value="CrowEngineUI/CrowEngineUI.csproj" />
+        <entry key="CrowEngineUI/FileManager.axaml" value="CrowEngineUI/CrowEngineUI.csproj" />
         <entry key="CrowEngineUI/MainWindow.axaml" value="CrowEngineUI/CrowEngineUI.csproj" />
         <entry key="CrowEngineUI/MonoGameControl.axaml" value="CrowEngineUI/CrowEngineUI.csproj" />
         <entry key="CrowEngineUI/NavbarMenu.axaml" value="CrowEngineUI/CrowEngineUI.csproj" />
+        <entry key="CrowEngineUI/TabStyle.axaml" value="CrowEngineUI/CrowEngineUI.csproj" />
       </map>
     </option>
   </component>
