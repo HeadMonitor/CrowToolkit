@@ -1,8 +1,7 @@
-﻿using Avalonia;
-using Avalonia.Controls;
-using Avalonia.Markup.Xaml;
+﻿using Avalonia.Controls;
+using CrowEngineUI.ViewModels;
 
-namespace CrowEngineUI.Assets;
+namespace CrowEngineUI.Views;
 
 public partial class BottomTabs : UserControl
 {
@@ -10,4 +9,5 @@ public partial class BottomTabs : UserControl
     {
         InitializeComponent();
     }
+
 }

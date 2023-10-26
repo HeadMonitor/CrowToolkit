@@ -1,8 +1,6 @@
-using Avalonia;
 using Avalonia.Controls;
-using Avalonia.Input;
 
-namespace CrowEngineUI;
+namespace CrowEngineUI.Views;
 
 public partial class MainWindow : Window
 {

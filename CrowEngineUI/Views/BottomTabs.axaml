@@ -2,17 +2,40 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:Tabalonia.Controls;assembly=Tabalonia"
+             xmlns:dragablzDemo="clr-namespace:CrowEngineUI.ViewModels"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="CrowEngineUI.Assets.BottomTabs"
-             Background="#303030">
+             x:Class="CrowEngineUI.Views.BottomTabs"
+             Background="#303030"
+             x:DataType="dragablzDemo:MainViewModel">
     
     <UserControl.Styles>
         <StyleInclude Source="../TabStyle.axaml"/>
     </UserControl.Styles>
     
+    <controls:TabsControl ItemsSource="{Binding TabItems}"
+                          NewItemFactory="{Binding NewItemFactory}"
+                          FixedHeaderCount="1">
+        <TabControl.ContentTemplate>
+            <DataTemplate DataType="{x:Type dragablzDemo:TabItemViewModel}">
+                <Grid Background="{DynamicResource SelectedTabItemBackgroundBrush}">
+                    <TextBlock  Text="{Binding SimpleContent}"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"/>
+                </Grid>
+            </DataTemplate>
+        </TabControl.ContentTemplate>
+        <TabControl.ItemTemplate>
+            <DataTemplate DataType="{x:Type dragablzDemo:TabItemViewModel}">
+                <TextBlock Text="{Binding Header}" />
+            </DataTemplate>
+        </TabControl.ItemTemplate>
+    </controls:TabsControl>
+    
+    <!--
     <TabControl>
         <TabItem Header="File Manager"></TabItem>
         <TabItem Header="Console"></TabItem>
     </TabControl>
-    
+    -->
 </UserControl>

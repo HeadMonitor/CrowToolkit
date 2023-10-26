@@ -3,10 +3,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:crowEngineUi="clr-namespace:CrowEngineUI"
-        xmlns:assets="clr-namespace:CrowEngineUI.Assets"
         xmlns:views="clr-namespace:CrowEngineUI.Views"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-        x:Class="CrowEngineUI.MainWindow"
+        x:Class="CrowEngineUI.Views.MainWindow"
         Title="CrowEngine"
         Icon="">
     
@@ -28,10 +27,10 @@
             
             <!-- -->
             <GridSplitter Grid.Column="3" Background="#1E1E1E" ResizeDirection="Columns"/>
-            <Rectangle Grid.Column="4" Fill="Aqua"/>
+            <views:RightTabs Grid.Column="4" />
         </Grid>
         
         <GridSplitter Grid.Row="3" Background="#1E1E1E" ResizeDirection="Rows"/>
-        <assets:BottomTabs Grid.Row="4"/>
+        <views:BottomTabs Grid.Row="4"/>
     </Grid>
 </Window>

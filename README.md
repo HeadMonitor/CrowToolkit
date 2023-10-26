@@ -5,8 +5,6 @@
     <img src="https://github.com/ScreenCrowStudios/CrowEngine/assets/62361708/0eebe03b-5203-4b1f-a8f5-6d748ae5012a" alt="Avalonia Icon" width="128">
 </p>
 
-<hr/>
-
 ## Special Thanks
 [Kitaivian](https://github.com/kittyDIY28) for the Logos and Icons <br/>
 [AristurtleDev](https://github.com/AristurtleDev) for [MonoGame.Avalonia](https://github.com/AristurtleDev/MonoGame.Avalonia)
