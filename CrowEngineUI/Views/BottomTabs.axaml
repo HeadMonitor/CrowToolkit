@@ -7,7 +7,7 @@
              Background="#303030">
     
     <UserControl.Styles>
-        <StyleInclude Source="TabStyle.axaml"/>
+        <StyleInclude Source="../TabStyle.axaml"/>
     </UserControl.Styles>
     
     <TabControl>

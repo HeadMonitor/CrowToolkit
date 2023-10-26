@@ -25,13 +25,24 @@
 
 
     <ItemGroup>
-      <Folder Include="Assets\" />
-    </ItemGroup>
-
-
-    <ItemGroup>
-      <Compile Update="BottomTabs.axaml.cs">
-        <DependentUpon>FileManager.axaml</DependentUpon>
+      <Compile Update="Views\BottomTabs.axaml.cs">
+        <DependentUpon>BottomTabs.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Views\LeftTabs.axaml.cs">
+        <DependentUpon>LeftTabs.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Views\MainWindow.axaml.cs">
+        <DependentUpon>MainWindow.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Views\Navbar.axaml.cs">
+        <DependentUpon>Navbar.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Views\NavbarMenu.axaml.cs">
+        <DependentUpon>NavbarMenu.axaml</DependentUpon>
         <SubType>Code</SubType>
       </Compile>
     </ItemGroup>

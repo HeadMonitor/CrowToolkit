@@ -4,6 +4,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:crowEngineUi="clr-namespace:CrowEngineUI"
         xmlns:assets="clr-namespace:CrowEngineUI.Assets"
+        xmlns:views="clr-namespace:CrowEngineUI.Views"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="CrowEngineUI.MainWindow"
         Title="CrowEngine"
@@ -23,7 +24,7 @@
             <GridSplitter Grid.Column="1" Background="#1E1E1E" ResizeDirection="Columns"/>
             
             <!-- Editor -->
-            <crowEngineUi:MonoGameControl Grid.Column="2" />
+            <views:MonoGameView Grid.Column="2" />
             
             <!-- -->
             <GridSplitter Grid.Column="3" Background="#1E1E1E" ResizeDirection="Columns"/>
