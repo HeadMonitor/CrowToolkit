@@ -24,7 +24,7 @@
     </Style>
     
     <Style Selector="TabItem:focus">
-        <Setter Property="Foreground" Value="#313131"/>
+        <Setter Property="Background" Value="#313131"/>
     </Style>
     
     <Style Selector="TabItem:selected">

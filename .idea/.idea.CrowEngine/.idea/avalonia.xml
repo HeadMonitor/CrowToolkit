@@ -19,6 +19,7 @@
         <entry key="CrowEngineUI/Views/MonoGameView.axaml" value="CrowEngineUI/CrowEngineUI.csproj" />
         <entry key="CrowEngineUI/Views/Navbar.axaml" value="CrowEngineUI/CrowEngineUI.csproj" />
         <entry key="CrowEngineUI/Views/NavbarMenu.axaml" value="CrowEngineUI/CrowEngineUI.csproj" />
+        <entry key="CrowEngineUI/Views/Tools/Compressor.axaml" value="CrowEngineUI/CrowEngineUI.csproj" />
       </map>
     </option>
   </component>

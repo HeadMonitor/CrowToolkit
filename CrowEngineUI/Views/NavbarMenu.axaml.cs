@@ -1,5 +1,6 @@
 ﻿using Avalonia.Controls;
 using Avalonia.Interactivity;
+using CrowEngineUI.Views.Tools;
 
 namespace CrowEngineUI;
 
@@ -35,5 +36,17 @@ public partial class NavbarMenu : UserControl
     /* Edit Menu */
     
     /* Tools Menu */
+    
+    private void Compressor(object? sender, RoutedEventArgs routedEventArgs)
+    {
+        var compressor = new Compressor();
+
+        compressor.Show();
+    }
+    
+    private void Converter(object? sender, RoutedEventArgs routedEventArgs)
+    {
+        
+    }
     
 }

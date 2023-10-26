@@ -21,8 +21,8 @@
 
             <!-- Tools Menu -->
             <MenuItem Header="Tools">
-                <MenuItem Header="Compressor"/>
-                <MenuItem Header="Converter"/>
+                <MenuItem Header="Compressor" Click="Compressor"/>
+                <MenuItem Header="Converter" Click="Converter"/>
             </MenuItem>
             
             <!-- Help Menu -->
