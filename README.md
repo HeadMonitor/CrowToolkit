@@ -5,6 +5,8 @@
     <img src="https://github.com/ScreenCrowStudios/CrowEngine/assets/62361708/0eebe03b-5203-4b1f-a8f5-6d748ae5012a" alt="Avalonia Icon" width="128">
 </p>
 
+<hr/>
+
 <p align="center">
-  <img src="" alt="ScreenCrow Studios Logo">
+  <img src="https://github.com/ScreenCrowStudios/INSANITY/assets/62361708/57ae1731-ebb0-461f-a61d-4a1cc1e1b8c0" alt="ScreenCrow Studios Logo">
 </p>
