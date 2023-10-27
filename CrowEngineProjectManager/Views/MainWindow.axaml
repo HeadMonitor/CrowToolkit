@@ -14,11 +14,10 @@
     
         <TabControl>
                 <TabItem Header="Project Manager">
-                        <Grid ColumnDefinitions="*, 120">
+                        <Grid ColumnDefinitions="*, Auto" Margin="5">
                                 <views:ProjectList Grid.Column="0"/>
                                 <views:ProjectManagerButtons Grid.Column="1"/>
                         </Grid>
                 </TabItem>
-                <TabItem Header="dwdw"></TabItem>
         </TabControl>
 </Window>

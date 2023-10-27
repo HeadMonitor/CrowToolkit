@@ -2,24 +2,49 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:views="clr-namespace:CrowEngineProjectManager.Views"
+             xmlns:avalonia="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="CrowEngineProjectManager.Views.ProjectManagerButtons">
+             x:Class="CrowEngineProjectManager.Views.ProjectManagerButtons"
+             Margin="5"
+             Background="#171717">
     
-    <Grid HorizontalAlignment="Right">
+    <Grid HorizontalAlignment="Right" Margin="5">
         <StackPanel VerticalAlignment="Top">
-            <Button Margin="5" Width="100" Foreground="#FFFFFF">
-                <Button.Content>
-                    <TextBlock Text="New" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                </Button.Content>
+            <!-- New Project Button -->
+            <Button Width="130" Margin="5">
+                <Grid ColumnDefinitions="Auto, 5, Auto">
+                    <avalonia:MaterialIcon Grid.Column="0" Kind="FilePlus"/>
+                    <TextBlock Grid.Column="2" Text="New Project"/>
+                </Grid>
             </Button>
             
-            <Button Margin="5" Width="100" Foreground="#FFFFFF">
-                <Button.Content>
-                    <TextBlock Text="Import" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                </Button.Content>
+            <!-- Import Project Button -->
+            <Button Width="130" Margin="5">
+                <Grid ColumnDefinitions="Auto, 5, Auto">
+                    <avalonia:MaterialIcon Grid.Column="0" Kind="FileImport"/>
+                    <TextBlock Grid.Column="2" Text="Import Project"/>
+                </Grid>
             </Button>
             
             <Separator/>
+            
+            <!-- Open Project Button -->
+            <Button Width="130" Margin="5">
+                <Grid ColumnDefinitions="Auto, 5, Auto">
+                    <avalonia:MaterialIcon Grid.Column="0" Kind="Pencil"/>
+                    <TextBlock Grid.Column="2" Text="Open"/>
+                </Grid>
+            </Button>
+            
+            <!-- Delete Project Button -->
+            <Button Width="130" Margin="5">
+                <Grid ColumnDefinitions="Auto, 5, Auto">
+                    <avalonia:MaterialIcon Grid.Column="0" Kind="Delete"/>
+                    <TextBlock Grid.Column="2" Text="Delete"/>
+                </Grid>
+            </Button>
+            
         </StackPanel>
     </Grid>
 </UserControl>

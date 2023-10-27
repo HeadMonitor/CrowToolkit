@@ -6,11 +6,16 @@
         <entry key="CrowEngineEditor/App.axaml" value="CrowEngineEditor/CrowEngineEditor.csproj" />
         <entry key="CrowEngineEditor/Styles/TabStyle.axaml" value="CrowEngineEditor/CrowEngineEditor.csproj" />
         <entry key="CrowEngineEditor/Views/BottomTabs.axaml" value="CrowEngineEditor/CrowEngineEditor.csproj" />
+        <entry key="CrowEngineEditor/Views/Button.axaml" value="CrowEngineEditor/CrowEngineEditor.csproj" />
+        <entry key="CrowEngineEditor/Views/IconButton.axaml" value="CrowEngineEditor/CrowEngineEditor.csproj" />
         <entry key="CrowEngineEditor/Views/MainWindow.axaml" value="CrowEngineEditor/CrowEngineEditor.csproj" />
         <entry key="CrowEngineProjectManager/App.axaml" value="CrowEngineProjectManager/CrowEngineProjectManager.csproj" />
         <entry key="CrowEngineProjectManager/MainWindow.axaml" value="CrowEngineProjectManager/CrowEngineProjectManager.csproj" />
         <entry key="CrowEngineProjectManager/Styles/TabStyle.axaml" value="CrowEngineProjectManager/CrowEngineProjectManager.csproj" />
+        <entry key="CrowEngineProjectManager/Views/IconButton.axaml" value="CrowEngineProjectManager/CrowEngineProjectManager.csproj" />
         <entry key="CrowEngineProjectManager/Views/MainWindow.axaml" value="CrowEngineProjectManager/CrowEngineProjectManager.csproj" />
+        <entry key="CrowEngineProjectManager/Views/NewProjectWindow.axaml" value="CrowEngineProjectManager/CrowEngineProjectManager.csproj" />
+        <entry key="CrowEngineProjectManager/Views/ProjectItem.axaml" value="CrowEngineProjectManager/CrowEngineProjectManager.csproj" />
         <entry key="CrowEngineProjectManager/Views/ProjectList.axaml" value="CrowEngineProjectManager/CrowEngineProjectManager.csproj" />
         <entry key="CrowEngineProjectManager/Views/ProjectManagerButtons.axaml" value="CrowEngineProjectManager/CrowEngineProjectManager.csproj" />
         <entry key="CrowEngineUI/App.axaml" value="CrowEngineUI/CrowEngineUI.csproj" />

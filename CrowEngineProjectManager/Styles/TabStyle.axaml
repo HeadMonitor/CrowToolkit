@@ -7,25 +7,28 @@
 
     <Style Selector="TabControl WrapPanel">
         <Setter Property="Background" Value="#1E1E1E"/>
-        <Setter Property="Height" Value="25"/>
+        <Setter Property="Height" Value="35"/>
     </Style>
     
     <Style Selector="TabControl TabStrip">
         <Setter Property="Margin" Value="0, 0, 0, 0" />
     </Style>
-    
+
     <Style Selector="TabItem">
         <Setter Property="FontSize" Value="12"/>
         <Setter Property="VerticalAlignment" Value="Center"/>
-        <Setter Property="CornerRadius" Value="10, 10, 10, 10"/>
         <Setter Property="Foreground" Value="White"/>
     </Style>
     
-    <Style Selector="TabItem:pointerover">
-        <Setter Property="Background" Value="#124078"/>
+    <Style Selector="TabItem:pointerover /template/ Border#PART_LayoutRoot">
+        <Setter Property="Background" Value="#383838"/>
     </Style>
     
     <Style Selector="TabItem:selected">
         <Setter Property="Background" Value="#303030"/>
+    </Style>
+    
+    <Style Selector="TabItem:selected /template/ Border#PART_SelectedPipe">
+        <Setter Property="IsVisible" Value="false"/> <!-- Removing Underline -->
     </Style>
 </Styles>

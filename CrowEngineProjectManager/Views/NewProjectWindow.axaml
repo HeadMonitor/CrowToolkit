@@ -1,0 +1,23 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="CrowEngineProjectManager.Views.NewProjectWindow"
+        Title="NewProjectWindow">
+    
+        <TabControl>
+                <TabItem Header="New Project">
+                        <Grid RowDefinitions="*, Auto" Margin="5" VerticalAlignment="Top">
+                                <TextBlock Grid.Row="0" Text="Project Name:" />
+                                
+                                <Grid Grid.Row="1" ColumnDefinitions="*, 50">
+                                        <TextBox Grid.Column="0" Height="6"/>  
+                                        <Button Grid.Column="1" Height="Auto">
+                                                
+                                        </Button>
+                                </Grid>
+                        </Grid>
+                </TabItem>
+        </TabControl>
+</Window>

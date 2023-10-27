@@ -48,4 +48,11 @@
         <SubType>Code</SubType>
       </Compile>
     </ItemGroup>
+
+
+    <ItemGroup>
+      <Reference Include="Material.Icons.Avalonia">
+        <HintPath>C:\Users\hecto\.nuget\packages\material.icons.avalonia\2.0.1\lib\netstandard2.0\Material.Icons.Avalonia.dll</HintPath>
+      </Reference>
+    </ItemGroup>
 </Project>
