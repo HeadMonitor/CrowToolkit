@@ -10,7 +10,7 @@
              x:DataType="dragablzDemo:MainViewModel">
     
     <UserControl.Styles>
-        <StyleInclude Source="../TabStyle.axaml"/>
+        <StyleInclude Source="../Styles/TabStyle.axaml"/>
     </UserControl.Styles>
     
     <controls:TabsControl ItemsSource="{Binding TabItems}"

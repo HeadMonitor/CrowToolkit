@@ -5,6 +5,7 @@
              RequestedThemeVariant="Dark">
 
     <Application.Styles>
-        <FluentTheme />
+        <FluentTheme DensityStyle="Normal"/>
+        <themes:FluentTheme />
     </Application.Styles>
 </Application>

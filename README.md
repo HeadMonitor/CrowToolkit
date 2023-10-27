@@ -7,7 +7,8 @@
 
 ## Special Thanks
 [Kitaivian](https://github.com/kittyDIY28) for the Logos and Icons <br/>
-[AristurtleDev](https://github.com/AristurtleDev) for [MonoGame.Avalonia](https://github.com/AristurtleDev/MonoGame.Avalonia)
+[AristurtleDev](https://github.com/AristurtleDev) for [MonoGame.Avalonia](https://github.com/AristurtleDev/MonoGame.Avalonia) <br/>
+[egorozh](https://github.com/egorozh) for [Tabalonia](https://github.com/egorozh/Tabalonia)
 
 <hr/>
 

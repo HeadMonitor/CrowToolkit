@@ -8,7 +8,7 @@
         Background="#303030">
         
         <Window.Styles>
-                <StyleInclude Source="../../TabStyle.axaml"/>
+                <StyleInclude Source="../../Styles/TabStyle.axaml"/>
         </Window.Styles>
     
         <TabControl>

@@ -6,9 +6,10 @@
         <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
         <ApplicationManifest>app.manifest</ApplicationManifest>
         <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+        <RuntimeIdentifiers>win10-x64;ubuntu.16.10-x64</RuntimeIdentifiers>
+        <RootNamespace>CrowEngineUI</RootNamespace>
     </PropertyGroup>
-
-
+    
     <ItemGroup>
         <PackageReference Include="Avalonia" Version="11.0.2" />
         <PackageReference Include="Avalonia.Desktop" Version="11.0.2" />
@@ -21,7 +22,7 @@
 
 
     <ItemGroup>
-      <ProjectReference Include="..\CrowEngineEditor - Cross Platform Desktop Exporter\CrowEngineEditor - Cross Platform Desktop Exporter.csproj" />
+      <ProjectReference Include="..\MonoGameEditor - Cross Platform Desktop Exporter\MonoGameEditor - Cross Platform Desktop Exporter.csproj" />
     </ItemGroup>
 
 

@@ -5,6 +5,7 @@
         <RollForward>Major</RollForward>
         <PublishReadyToRun>false</PublishReadyToRun>
         <TieredCompilation>false</TieredCompilation>
+        <RootNamespace>CrowEngineEditor_-_Cross_Platform_Desktop_Exporter</RootNamespace>
     </PropertyGroup>
     <PropertyGroup>
         <ApplicationManifest>app.manifest</ApplicationManifest>

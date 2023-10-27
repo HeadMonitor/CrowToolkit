@@ -16,6 +16,8 @@ public class MainViewModel
             Header = "Fixed Tab",
             SimpleContent = "Fixed Tab content"
         });
+        
+        
 
         const int count = 10;
 

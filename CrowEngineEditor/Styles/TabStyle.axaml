@@ -1,0 +1,36 @@
+﻿<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Design.PreviewWith>
+        <Border Padding="20">
+            <!-- Add Controls for Previewer Here -->
+        </Border>
+    </Design.PreviewWith>
+
+    <Style Selector="TabControl WrapPanel">
+        <Setter Property="Background" Value="#1E1E1E"/>
+        <Setter Property="Height" Value="25"/>
+    </Style>
+    
+    <Style Selector="TabControl TabStrip">
+        <Setter Property="Margin" Value="0, 0, 0, 0" />
+    </Style>
+    
+    <Style Selector="TabItem">
+        <Setter Property="FontSize" Value="12"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="CornerRadius" Value="10, 10, 10, 10"/>
+        <Setter Property="Foreground" Value="White"/>
+    </Style>
+    
+    <Style Selector="TabItem:selected /template/ Border#PART_SelectedPipe">
+        <Setter Property="IsVisible" Value="false"/>
+    </Style>
+    
+    <Style Selector="TabItem:selected">
+        <Setter Property="Background" Value="#303030"/>
+    </Style>
+    
+    <Style Selector="TabItem:PART_SelectedPipe">
+        <Setter Property="Background" Value="Transparent" />
+    </Style>
+</Styles>
