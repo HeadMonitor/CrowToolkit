@@ -3,8 +3,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:views="clr-namespace:CrowEngineProjectManager.Views"
+        xmlns:dialogHostAvalonia="clr-namespace:DialogHostAvalonia;assembly=DialogHost.Avalonia"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-        x:Class="CrowEngineProjectManager.MainWindow"
+        x:Class="CrowEngineProjectManager.Views.MainWindow"
         Title="CrowEngineProjectManager"
         Background="#303030">
     
@@ -12,12 +13,68 @@
                 <StyleInclude Source="../Styles/TabStyle.axaml"/>
         </Window.Styles>
     
-        <TabControl>
-                <TabItem Header="Project Manager">
-                        <Grid ColumnDefinitions="*, Auto" Margin="5">
-                                <views:ProjectList Grid.Column="0"/>
-                                <views:ProjectManagerButtons Grid.Column="1"/>
+        <dialogHostAvalonia:DialogHost CloseOnClickAway="True" Identifier="NewProjectDialogue" Name="NewProjectDialogue" Background="#303030">
+                <dialogHostAvalonia:DialogHost.DialogContent>
+                        <Grid RowDefinitions="Auto, 25, Auto, 25, Auto, 25, Auto, 25 Auto" Margin="5" VerticalAlignment="Top" Width="512">
+                                <!-- Project Name -->
+                                <Grid Grid.Row="0" RowDefinitions="*, 5, *, *">
+                                        <TextBlock Grid.Row="0" Text="Project Name:"/>
+                                        <TextBox Grid.Row="2" Height="6" x:Name="ProjectNameTextBox" TextChanged="ProjectNameTextBoxTextChanged"/>
+                                        <TextBlock Grid.Row="3" Text="Project Name contains invalid characters or is empty!" x:Name="ProjectNameErrorText" Foreground="#ef1110" IsVisible="True"/>
+                                </Grid>
+                                
+                                <!-- Project Description -->
+                                <Grid Grid.Row="2" RowDefinitions="*, 5, * ">
+                                        <TextBlock Grid.Row="0" Text="Project Description:"/>
+                                        <TextBox Grid.Row="2" Height="6" x:Name="ProjectDescriptionTextBox" MinHeight="50" MaxHeight="50"/>
+                                </Grid>
+                                
+                                <!-- Project Path -->
+                                <Grid Grid.Row="4" RowDefinitions="*, 5, *, *">
+                                        <TextBlock Grid.Row="0" Text="Project Path:" />
+                                        <Grid Grid.Row="2" ColumnDefinitions="*, 5, 100">
+                                                <TextBox Grid.Column="0" x:Name="ProjectPathTextBox" TextChanged="ProjectPathTextBoxTextChanged" Height="6"/>  
+                                                <Button Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="Browse">
+                                                        <TextBlock TextAlignment="Center">Browse</TextBlock>
+                                                </Button>
+                                        </Grid>
+                                        <TextBlock Grid.Row="3" Text="Project Path is invalid or doesn't exist!" x:Name="ProjectPathErrorText" Foreground="#ef1110" IsVisible="True"/>
+                                </Grid>
+                                
+                                <!-- Project Framework -->
+                                <Grid Grid.Row="6" RowDefinitions="*, 5, *">
+                                        <TextBlock Grid.Row="0" Text="Project Framework:"/>
+                                        <Grid Grid.Row="2"  ColumnDefinitions="*, *, *">
+                                                <RadioButton Grid.Column="0" GroupName="ProjectFramework" IsChecked="True">
+                                                        <Grid ColumnDefinitions="Auto, 5, Auto">
+                                                                <Image Grid.Column="0" Width="16" Source="avares://CrowEngineProjectManager/Assets/MonoGame.png"/>
+                                                                <TextBlock Grid.Column="2" Text="MonoGame"/>
+                                                        </Grid>
+                                                </RadioButton>
+                                                <RadioButton Grid.Column="1" GroupName="ProjectFramework" IsEnabled="False">
+                                                        <Grid ColumnDefinitions="Auto, 5, Auto">
+                                                                <Image Grid.Column="0" Width="16" Source="avares://CrowEngineProjectManager/Assets/OpenGL.png"/>
+                                                                <TextBlock Grid.Column="2" Text="OpenGL"/>
+                                                        </Grid>
+                                                </RadioButton>
+                                        </Grid>
+                                </Grid>
+                                
+                                <!-- Cancel/Confirm Buttons -->
+                                <Grid Grid.Row="8" ColumnDefinitions="Auto, 5, Auto" HorizontalAlignment="Right">
+                                        <Button Grid.Column="0" Content="Cancel" Click="Cancel"/>
+                                        <Button Grid.Column="2" Content="Confirm" x:Name="ConfirmButton" Click="Confirm" IsEnabled="False"/>
+                                </Grid>
                         </Grid>
-                </TabItem>
-        </TabControl>
+                </dialogHostAvalonia:DialogHost.DialogContent>
+                <!-- Window -->
+                <TabControl>
+                        <TabItem Header="Project Manager">
+                                <Grid ColumnDefinitions="*, Auto" Margin="5">
+                                        <views:ProjectList Grid.Column="0"/>
+                                        <views:ProjectManagerSidePanel Name="ProjectManagerSidePanel" Grid.Column="1"/>
+                                </Grid>
+                        </TabItem>
+                </TabControl>
+        </dialogHostAvalonia:DialogHost>
 </Window>

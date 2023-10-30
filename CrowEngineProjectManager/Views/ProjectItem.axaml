@@ -3,9 +3,11 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:avalonia="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
+             xmlns:views="clr-namespace:CrowEngineProjectManager.Views"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="CrowEngineProjectManager.Views.ProjectItem">
-    
+             x:Class="CrowEngineProjectManager.Views.ProjectItem"
+             x:DataType="views:ProjectItem">
+
     <Grid RowDefinitions="*, *" VerticalAlignment="Top" Margin="5">
         <Button Grid.Row="0" Background="Transparent" HorizontalAlignment="Stretch">
             <Grid ColumnDefinitions="*, *, Auto" RowDefinitions="100" HorizontalAlignment="Left" Margin="5">
@@ -19,8 +21,8 @@
                 
                 <!-- Project Texts -->
                 <Grid Grid.Column="2" RowDefinitions="25, *" Margin="10">
-                    <TextBlock Grid.Row="0" Text="Project Title" FontWeight="Bold" FontSize="18"/>
-                    <TextBlock Grid.Row="1" Text="Project Description"/>
+                    <TextBlock Grid.Row="0" Text="{Binding ProjectName}" FontWeight="Bold" FontSize="18"/>
+                    <TextBlock Grid.Row="1" Text="{Binding ProjectDescription}"/>
                 </Grid>
             </Grid>
         </Button>

@@ -1,0 +1,35 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="CrowEngineUI.Views.NavbarMenu">
+
+    <Grid>
+        <Menu DockPanel.Dock="Top">
+            <!-- File Menu -->
+            <MenuItem Header="File">
+                <MenuItem Header="New Project" Click="NewProject" />
+                <MenuItem Header="Open Project" Click="OpenProject" />
+                <MenuItem Header="Save" Click="Save" />
+                <MenuItem Header="Exit" Click="Exit" />
+            </MenuItem>
+
+            <!-- Edit Menu -->
+            <MenuItem Header="Edit" />
+
+            <!-- Tools Menu -->
+            <MenuItem Header="Tools">
+                <MenuItem Header="Compressor" Click="Compressor" />
+                <MenuItem Header="Converter" Click="Converter" />
+            </MenuItem>
+
+            <!-- Help Menu -->
+            <MenuItem Header="Help">
+                <MenuItem Header="About" />
+                <MenuItem Header="Credits" />
+            </MenuItem>
+        </Menu>
+
+    </Grid>
+</UserControl>

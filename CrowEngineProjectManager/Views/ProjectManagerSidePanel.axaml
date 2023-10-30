@@ -1,0 +1,48 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:avalonia="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="CrowEngineProjectManager.Views.ProjectManagerSidePanel"
+             Margin="5"
+             Background="#171717">
+    
+    <Grid HorizontalAlignment="Right" Margin="5">
+        <StackPanel VerticalAlignment="Top">
+            <!-- New Project Button -->
+            <Button Width="130" Margin="5" Click="OnNewProjectButtonClicked">
+                <Grid ColumnDefinitions="Auto, 5, Auto">
+                    <avalonia:MaterialIcon Grid.Column="0" Kind="FilePlus"/>
+                    <TextBlock Grid.Column="2" Text="New Project"/>
+                </Grid>
+            </Button>
+                
+            <!-- Import Project Button -->
+            <Button Width="130" Margin="5">
+                <Grid ColumnDefinitions="Auto, 5, Auto">
+                    <avalonia:MaterialIcon Grid.Column="0" Kind="FileImport"/>
+                    <TextBlock Grid.Column="2" Text="Import Project"/>
+                </Grid>
+            </Button>
+                
+            <Separator/>
+                
+            <!-- Open Project Button -->
+            <Button Width="130" Margin="5">
+                <Grid ColumnDefinitions="Auto, 5, Auto">
+                    <avalonia:MaterialIcon Grid.Column="0" Kind="Pencil"/>
+                    <TextBlock Grid.Column="2" Text="Open"/>
+                </Grid>
+            </Button>
+                
+            <!-- Delete Project Button -->
+            <Button Width="130" Margin="5">
+                <Grid ColumnDefinitions="Auto, 5, Auto">
+                    <avalonia:MaterialIcon Grid.Column="0" Kind="Delete"/>
+                    <TextBlock Grid.Column="2" Text="Delete"/>
+                </Grid>
+            </Button>
+        </StackPanel>
+    </Grid>
+</UserControl>

@@ -3,12 +3,15 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="CrowEngineProjectManager.Views.ProjectList"
-             Background="#1E1E1E"
-             BorderBrush="#303030"
-             BorderThickness="5">
-    
-    <ScrollViewer>
-        <Grid RowDefinitions="Auto, Auto" x:Name="ProjectsList"/>
-    </ScrollViewer>
+             x:Class="CrowEngineUI.Views.RightTabs"
+             Background="#303030">
+
+    <UserControl.Styles>
+        <StyleInclude Source="../Styles/TabStyle.axaml" />
+    </UserControl.Styles>
+
+    <TabControl x:Name="Draggable" Initialized="Draggable">
+        <TabItem Header="Inspector" />
+        <TabItem Header="Inspector" />
+    </TabControl>
 </UserControl>

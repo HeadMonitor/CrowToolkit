@@ -16,7 +16,9 @@
         <PackageReference Include="Avalonia.Fonts.Inter" Version="11.0.2" />
         <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
         <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.0.2" />
+        <PackageReference Include="DialogHost.Avalonia" Version="0.7.7" />
         <PackageReference Include="Material.Icons.Avalonia" Version="2.0.1" />
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     </ItemGroup>
 
 
@@ -36,6 +38,14 @@
 
 
     <ItemGroup>
-      <ProjectReference Include="..\CrowEngineEditor\CrowEngineEditor.csproj" />
+      <ProjectReference Include="..\CrowToolkitEditor\CrowToolkitEditor.csproj" />
+    </ItemGroup>
+
+
+    <ItemGroup>
+      <None Remove="Assets\MonoGame.png" />
+      <AvaloniaResource Include="Assets\MonoGame.png" />
+      <None Remove="Assets\OpenGL.png" />
+      <AvaloniaResource Include="Assets\OpenGL.png" />
     </ItemGroup>
 </Project>
