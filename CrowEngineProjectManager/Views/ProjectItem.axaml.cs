@@ -12,6 +12,9 @@ public partial class ProjectItem : UserControl
     public static readonly StyledProperty<string> ProjectDescriptionProperty =
         AvaloniaProperty.Register<ProjectItem, string>(nameof(ProjectDescription), defaultValue: "Project Description");
     
+    public static readonly StyledProperty<string> ProjectPathProperty =
+        AvaloniaProperty.Register<ProjectItem, string>(nameof(ProjectPath), defaultValue: "Project/Path");
+    
     public string ProjectName
     {
         get => GetValue(ProjectNameProperty);
@@ -22,6 +25,12 @@ public partial class ProjectItem : UserControl
     {
         get => GetValue(ProjectDescriptionProperty);
         set => SetValue(ProjectDescriptionProperty, value);
+    }
+
+    public string ProjectPath
+    {
+        get => GetValue(ProjectPathProperty);
+        set => SetValue(ProjectPathProperty, value);
     }
 
     public ProjectItem()

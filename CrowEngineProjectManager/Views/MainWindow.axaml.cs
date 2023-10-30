@@ -99,7 +99,7 @@ public partial class MainWindow : Window
         var projectDescriptionTextBox = this.FindControl<TextBox>("ProjectDescriptionTextBox");
         var projectDescription = projectDescriptionTextBox!.Text;
         var projectPathTextBox = this.FindControl<TextBox>("ProjectPathTextBox");
-        var projectPath = projectPathTextBox!.Text;
+        var projectPath = Path.GetFullPath(projectPathTextBox!.Text!);
 
         // Create The Project Directory
         Directory.CreateDirectory(Path.Combine(projectPath!, projectName!));
@@ -108,11 +108,12 @@ public partial class MainWindow : Window
         try
         {
             // Project File
-            using var projectFile = File.CreateText(Path.Combine(projectPath!, projectName!, projectName!, ".ctproject"));
+            using var projectFile = File.CreateText(Path.Combine(projectPath!, projectName!, projectName + ".ctproject"));
             var projectFileData = new
             {
                 ProjectName = projectName,
                 ProjectDescription = projectDescription,
+                ProjectPath = projectPath,
                 CreatedDate = DateTime.Now
             };
             var jsonData = JsonConvert.SerializeObject(projectFileData, Formatting.Indented);

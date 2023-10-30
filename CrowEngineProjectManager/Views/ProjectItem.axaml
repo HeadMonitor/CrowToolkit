@@ -17,12 +17,13 @@
                 </Button>
                 
                 <!-- Project Icon -->
-                <Rectangle Grid.Column="1" Fill="Black" Width="100" Height="100" />
+                <Rectangle Grid.Column="1" Fill="White" Width="100" Height="100" />
                 
                 <!-- Project Texts -->
-                <Grid Grid.Column="2" RowDefinitions="25, *" Margin="10">
+                <Grid Grid.Column="2" RowDefinitions="25, *, *, *" Margin="10">
                     <TextBlock Grid.Row="0" Text="{Binding ProjectName}" FontWeight="Bold" FontSize="18"/>
                     <TextBlock Grid.Row="1" Text="{Binding ProjectDescription}"/>
+                    <TextBlock Grid.Row="3" Text="{Binding ProjectPath}" Foreground="DarkSlateGray"/>
                 </Grid>
             </Grid>
         </Button>
