@@ -19,6 +19,7 @@
         <PackageReference Include="DialogHost.Avalonia" Version="0.7.7" />
         <PackageReference Include="Material.Icons.Avalonia" Version="2.0.1" />
         <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+        <PackageReference Include="Tabalonia" Version="0.9.12" />
     </ItemGroup>
 
 

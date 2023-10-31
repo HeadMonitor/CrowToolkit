@@ -2,12 +2,15 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:views="clr-namespace:CrowEngineProjectManager.Views"
         xmlns:dialogHostAvalonia="clr-namespace:DialogHostAvalonia;assembly=DialogHost.Avalonia"
+        xmlns:controls="clr-namespace:Tabalonia.Controls;assembly=Tabalonia"
+        xmlns:dragablzDemo="clr-namespace:CrowEngineUI.ViewModels;assembly=CrowToolkitEditor"
+        xmlns:viewModels="clr-namespace:CrowEngineProjectManager.ViewModels"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="CrowEngineProjectManager.Views.MainWindow"
         Title="CrowEngineProjectManager"
-        Background="#303030">
+        Background="#303030"
+        x:DataType="viewModels:MainWindowTabsViewModel">
     
         <Window.Styles>
                 <StyleInclude Source="../Styles/TabStyle.axaml"/>
@@ -68,13 +71,27 @@
                         </Grid>
                 </dialogHostAvalonia:DialogHost.DialogContent>
                 <!-- Window -->
-                <TabControl>
-                        <TabItem Header="Project Manager">
+                <controls:TabsControl ItemsSource="{Binding TabItems}" NewItemFactory="{Binding NewItemFactory}" FixedHeaderCount="1" ShowDefaultAddButton="False" ShowDefaultCloseButton="True">
+                        <TabControl.ContentTemplate>
+                                <DataTemplate DataType="{x:Type dragablzDemo:TabItemViewModel}">
+                                        <Grid Background="{DynamicResource SelectedTabItemBackgroundBrush}">
+                                                <TextBlock  Text="{Binding SimpleContent}"
+                                                            HorizontalAlignment="Center"
+                                                            VerticalAlignment="Center"/>
+                                        </Grid>
+                                </DataTemplate>
+                        </TabControl.ContentTemplate>
+                        <TabControl.ItemTemplate>
+                                <DataTemplate DataType="{x:Type dragablzDemo:TabItemViewModel}">
+                                        <TextBlock Text="{Binding Header}" />
+                                </DataTemplate>
+                        </TabControl.ItemTemplate>
+                        <!--<TabControl.ItemTemplate>
                                 <Grid ColumnDefinitions="*, Auto" Margin="5">
                                         <views:ProjectList Grid.Column="0"/>
                                         <views:ProjectManagerSidePanel Name="ProjectManagerSidePanel" Grid.Column="1"/>
                                 </Grid>
-                        </TabItem>
-                </TabControl>
+                        </TabControl.ItemTemplate>-->
+                </controls:TabsControl>
         </dialogHostAvalonia:DialogHost>
 </Window>

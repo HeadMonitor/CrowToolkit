@@ -1,20 +1,20 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 
-namespace CrowEngineUI.ViewModels;
+namespace CrowEngineProjectManager.ViewModels;
 
-public class MainViewModel
+public class MainWindowTabsViewModel
 {
     private int _i;
 
-    public MainViewModel()
+    public MainWindowTabsViewModel()
     {
         TabItems.Add(new TabItemViewModel
         {
             Header = "Fixed Tab",
             SimpleContent = "Fixed Tab content"
         });
-        
+
         const int count = 10;
 
         for (var i = 0; i < count; i++)

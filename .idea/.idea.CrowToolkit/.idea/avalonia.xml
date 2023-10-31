@@ -40,6 +40,9 @@
         <entry key="CrowEngineUI/Views/Tools/Compressor.axaml" value="CrowEngineUI/CrowEngineUI.csproj" />
         <entry key="CrowToolkitEditor/App.axaml" value="CrowEngineProjectManager/CrowEngineProjectManager.csproj" />
         <entry key="CrowToolkitEditor/Styles/TabStyle.axaml" value="CrowEngineProjectManager/CrowEngineProjectManager.csproj" />
+        <entry key="CrowToolkitEditor/Views/BottomTabs.axaml" value="CrowEngineProjectManager/CrowEngineProjectManager.csproj" />
+        <entry key="CrowToolkitEditor/Views/MainWindow.axaml" value="CrowEngineProjectManager/CrowEngineProjectManager.csproj" />
+        <entry key="CrowToolkitEditor/Views/MonoGameView.axaml" value="CrowEngineProjectManager/CrowEngineProjectManager.csproj" />
       </map>
     </option>
   </component>
