@@ -1,6 +1,7 @@
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
+using CrowEngineProjectManager.ViewModels;
 
 namespace CrowEngineProjectManager;
 
@@ -15,7 +16,10 @@ public partial class App : Application
     {
         if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
         {
-            desktop.MainWindow = new Views.MainWindow();
+            desktop.MainWindow = new Views.MainWindow()
+            {
+                DataContext = new MainWindowTabsViewModel()
+            };
         }
 
         base.OnFrameworkInitializationCompleted();

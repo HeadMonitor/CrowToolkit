@@ -4,18 +4,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:dialogHostAvalonia="clr-namespace:DialogHostAvalonia;assembly=DialogHost.Avalonia"
         xmlns:controls="clr-namespace:Tabalonia.Controls;assembly=Tabalonia"
-        xmlns:dragablzDemo="clr-namespace:CrowEngineUI.ViewModels;assembly=CrowToolkitEditor"
         xmlns:viewModels="clr-namespace:CrowEngineProjectManager.ViewModels"
+        xmlns:views="clr-namespace:CrowEngineProjectManager.Views"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="CrowEngineProjectManager.Views.MainWindow"
-        Title="CrowEngineProjectManager"
+        Title="CrowToolkitProjectManager"
         Background="#303030"
         x:DataType="viewModels:MainWindowTabsViewModel">
-    
+        
         <Window.Styles>
-                <StyleInclude Source="../Styles/TabStyle.axaml"/>
+                <StyleInclude Source="/Styles/TabStyle.axaml"/>
         </Window.Styles>
-    
+        
         <dialogHostAvalonia:DialogHost CloseOnClickAway="True" Identifier="NewProjectDialogue" Name="NewProjectDialogue" Background="#303030">
                 <dialogHostAvalonia:DialogHost.DialogContent>
                         <Grid RowDefinitions="Auto, 25, Auto, 25, Auto, 25, Auto, 25 Auto" Margin="5" VerticalAlignment="Top" Width="512">
@@ -50,13 +50,13 @@
                                         <Grid Grid.Row="2"  ColumnDefinitions="*, *, *">
                                                 <RadioButton Grid.Column="0" GroupName="ProjectFramework" IsChecked="True">
                                                         <Grid ColumnDefinitions="Auto, 5, Auto">
-                                                                <Image Grid.Column="0" Width="16" Source="avares://CrowEngineProjectManager/Assets/MonoGame.png"/>
+                                                                <Image Grid.Column="0" Width="16" Source="avares://CrowToolkitProjectManager/Assets/MonoGame.png"/>
                                                                 <TextBlock Grid.Column="2" Text="MonoGame"/>
                                                         </Grid>
                                                 </RadioButton>
                                                 <RadioButton Grid.Column="1" GroupName="ProjectFramework" IsEnabled="False">
                                                         <Grid ColumnDefinitions="Auto, 5, Auto">
-                                                                <Image Grid.Column="0" Width="16" Source="avares://CrowEngineProjectManager/Assets/OpenGL.png"/>
+                                                                <Image Grid.Column="0" Width="16" Source="avares://CrowToolkitProjectManager/Assets/OpenGL.png"/>
                                                                 <TextBlock Grid.Column="2" Text="OpenGL"/>
                                                         </Grid>
                                                 </RadioButton>
@@ -71,27 +71,22 @@
                         </Grid>
                 </dialogHostAvalonia:DialogHost.DialogContent>
                 <!-- Window -->
-                <controls:TabsControl ItemsSource="{Binding TabItems}" NewItemFactory="{Binding NewItemFactory}" FixedHeaderCount="1" ShowDefaultAddButton="False" ShowDefaultCloseButton="True">
+                <controls:TabsControl ItemsSource="{Binding TabItems}" 
+                                      NewItemFactory="{Binding NewItemFactory}" 
+                                      FixedHeaderCount="1" ShowDefaultAddButton="False" ShowDefaultCloseButton="False">
+                        <TabControl.ItemTemplate>
+                                <DataTemplate>
+                                        <TextBlock Text="Project Manager" />
+                                </DataTemplate>
+                        </TabControl.ItemTemplate>
                         <TabControl.ContentTemplate>
-                                <DataTemplate DataType="{x:Type dragablzDemo:TabItemViewModel}">
-                                        <Grid Background="{DynamicResource SelectedTabItemBackgroundBrush}">
-                                                <TextBlock  Text="{Binding SimpleContent}"
-                                                            HorizontalAlignment="Center"
-                                                            VerticalAlignment="Center"/>
+                                <DataTemplate>
+                                        <Grid ColumnDefinitions="*, 10, Auto" Margin="10">
+                                                <views:ProjectList Grid.Column="0"/>
+                                                <views:SidePanel Name="ProjectManagerSidePanel" Grid.Column="2"/>
                                         </Grid>
                                 </DataTemplate>
                         </TabControl.ContentTemplate>
-                        <TabControl.ItemTemplate>
-                                <DataTemplate DataType="{x:Type dragablzDemo:TabItemViewModel}">
-                                        <TextBlock Text="{Binding Header}" />
-                                </DataTemplate>
-                        </TabControl.ItemTemplate>
-                        <!--<TabControl.ItemTemplate>
-                                <Grid ColumnDefinitions="*, Auto" Margin="5">
-                                        <views:ProjectList Grid.Column="0"/>
-                                        <views:ProjectManagerSidePanel Name="ProjectManagerSidePanel" Grid.Column="1"/>
-                                </Grid>
-                        </TabControl.ItemTemplate>-->
                 </controls:TabsControl>
         </dialogHostAvalonia:DialogHost>
 </Window>

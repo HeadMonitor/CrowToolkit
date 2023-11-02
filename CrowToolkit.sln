@@ -1,10 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoGameEditor - Cross Platform Desktop Exporter", "MonoGameEditor - Cross Platform Desktop Exporter\MonoGameEditor - Cross Platform Desktop Exporter.csproj", "{7B10B4D8-9B03-47AD-BF1F-EB76E41333AC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoGameEditor", "MonoGameEditor\MonoGameEditor.csproj", "{7B10B4D8-9B03-47AD-BF1F-EB76E41333AC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrowToolkitEditor", "CrowToolkitEditor\CrowToolkitEditor.csproj", "{80680831-5B1D-4FC8-A976-5F15C220866F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrowEngineProjectManager", "CrowEngineProjectManager\CrowEngineProjectManager.csproj", "{A201A0A0-B2D2-416B-9C4D-7EC190501623}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrowToolkitProjectManager", "CrowToolkitProjectManager\CrowToolkitProjectManager.csproj", "{A201A0A0-B2D2-416B-9C4D-7EC190501623}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

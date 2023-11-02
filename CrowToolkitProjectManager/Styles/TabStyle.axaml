@@ -1,0 +1,40 @@
+﻿<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="clr-namespace:Tabalonia.Controls;assembly=Tabalonia">
+    <Design.PreviewWith>
+        <Border Padding="20">
+        </Border>
+    </Design.PreviewWith>
+    
+    <Style Selector="controls|TabsControl">
+        
+        <Setter Property="Background" Value="#303030"/>
+    </Style>
+    
+    <Style Selector="controls|TabsControl /template/ Thumb#PART_RightDragWindowThumb">
+        <Setter Property="Background" Value="#1E1E1E" />
+    </Style>
+    
+    <Style Selector="controls|TabsControl /template/ Thumb#PART_LeftDragWindowThumb">
+        <Setter Property="Background" Value="#1E1E1E" />
+    </Style>
+    
+    <Style Selector="controls|DragTabItem">
+        <Setter Property="CornerRadius" Value="0"/>
+        <Setter Property="FontSize" Value="12"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="White"/>
+    </Style>
+    
+    <Style Selector="controls|DragTabItem:pointerover /template/ Border#PART_LayoutRoot">
+        <Setter Property="Background" Value="#313131"/>
+    </Style>
+    
+    <Style Selector="controls|DragTabItem:selected">
+        <Setter Property="Background" Value="#303030"/>
+    </Style>
+    
+    <Style Selector="controls|DragTabItem:selected /template/ Border#PART_SelectedPipe">
+        <Setter Property="IsVisible" Value="false"/> <!-- Removing Underline -->
+    </Style>
+</Styles>

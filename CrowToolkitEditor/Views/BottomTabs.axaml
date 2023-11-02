@@ -15,7 +15,7 @@
 
     <controls:TabsControl ItemsSource="{Binding TabItems}"
                           NewItemFactory="{Binding NewItemFactory}"
-                          FixedHeaderCount="1">
+                          FixedHeaderCount="1" ShowDefaultAddButton="False">
         <TabControl.ContentTemplate>
             <DataTemplate DataType="{x:Type dragablzDemo:TabItemViewModel}">
                 <Grid Background="{DynamicResource SelectedTabItemBackgroundBrush}">

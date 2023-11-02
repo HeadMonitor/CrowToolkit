@@ -40,9 +40,21 @@
         <entry key="CrowEngineUI/Views/Tools/Compressor.axaml" value="CrowEngineUI/CrowEngineUI.csproj" />
         <entry key="CrowToolkitEditor/App.axaml" value="CrowEngineProjectManager/CrowEngineProjectManager.csproj" />
         <entry key="CrowToolkitEditor/Styles/TabStyle.axaml" value="CrowEngineProjectManager/CrowEngineProjectManager.csproj" />
-        <entry key="CrowToolkitEditor/Views/BottomTabs.axaml" value="CrowEngineProjectManager/CrowEngineProjectManager.csproj" />
-        <entry key="CrowToolkitEditor/Views/MainWindow.axaml" value="CrowEngineProjectManager/CrowEngineProjectManager.csproj" />
+        <entry key="CrowToolkitEditor/Views/BottomTabs.axaml" value="CrowToolkitEditor/CrowToolkitEditor.csproj" />
+        <entry key="CrowToolkitEditor/Views/MainWindow.axaml" value="CrowToolkitEditor/CrowToolkitEditor.csproj" />
         <entry key="CrowToolkitEditor/Views/MonoGameView.axaml" value="CrowEngineProjectManager/CrowEngineProjectManager.csproj" />
+        <entry key="CrowToolkitEditor/Views/Navbar.axaml" value="CrowToolkitEditor/CrowToolkitEditor.csproj" />
+        <entry key="CrowToolkitProjectManager/App.axaml" value="CrowToolkitProjectManager/CrowToolkitProjectManager.csproj" />
+        <entry key="CrowToolkitProjectManager/Elements/IconButton.axaml" value="CrowToolkitProjectManager/CrowToolkitProjectManager.csproj" />
+        <entry key="CrowToolkitProjectManager/Styles/DragTabItem.axaml" value="CrowToolkitProjectManager/CrowToolkitProjectManager.csproj" />
+        <entry key="CrowToolkitProjectManager/Styles/MyTheme.axaml" value="CrowToolkitProjectManager/CrowToolkitProjectManager.csproj" />
+        <entry key="CrowToolkitProjectManager/Styles/TabStyle.axaml" value="CrowToolkitProjectManager/CrowToolkitProjectManager.csproj" />
+        <entry key="CrowToolkitProjectManager/Styles/TabsControl.axaml" value="CrowToolkitProjectManager/CrowToolkitProjectManager.csproj" />
+        <entry key="CrowToolkitProjectManager/Views/MainWindow.axaml" value="CrowToolkitProjectManager/CrowToolkitProjectManager.csproj" />
+        <entry key="CrowToolkitProjectManager/Views/ProjectItem.axaml" value="CrowToolkitProjectManager/CrowToolkitProjectManager.csproj" />
+        <entry key="CrowToolkitProjectManager/Views/ProjectList.axaml" value="CrowToolkitProjectManager/CrowToolkitProjectManager.csproj" />
+        <entry key="CrowToolkitProjectManager/Views/ProjectManagerSidePanel.axaml" value="CrowToolkitProjectManager/CrowToolkitProjectManager.csproj" />
+        <entry key="CrowToolkitProjectManager/Views/SidePanel.axaml" value="CrowToolkitProjectManager/CrowToolkitProjectManager.csproj" />
       </map>
     </option>
   </component>

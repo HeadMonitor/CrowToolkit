@@ -14,11 +14,6 @@ public class MainWindowTabsViewModel
             Header = "Fixed Tab",
             SimpleContent = "Fixed Tab content"
         });
-
-        const int count = 10;
-
-        for (var i = 0; i < count; i++)
-            TabItems.Add((TabItemViewModel)AddItem());
     }
 
     public Func<object> NewItemFactory => AddItem;

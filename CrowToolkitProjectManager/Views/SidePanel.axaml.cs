@@ -8,9 +8,9 @@ using DialogHostAvalonia;
 
 namespace CrowEngineProjectManager.Views;
 
-public partial class ProjectManagerSidePanel : UserControl
+public partial class SidePanel : UserControl
 {
-    public ProjectManagerSidePanel()
+    public SidePanel()
     {
         InitializeComponent();
     }
