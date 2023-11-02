@@ -17,26 +17,35 @@
                 
                 <Separator/>
             
-                <elements:IconButton ButtonText="Open" IconKind="OpenInApp" Margin="5"/>
-                <elements:IconButton ButtonText="Edit" IconKind="Edit" Margin="5"/>
-                <elements:IconButton ButtonText="Remove" IconKind="Remove" Margin="5"/>
-                <elements:IconButton ButtonText="Delete" IconKind="Delete" Margin="5"/>
-                <elements:IconButton ButtonText="Move Up" IconKind="ArrowUp" Margin="5"/>
-                <elements:IconButton ButtonText="Move Down" IconKind="ArrowDown" Margin="5"/>
+                <elements:IconButton ButtonText="Open" IconKind="OpenInApp" IsEnabled="False" Margin="5"/>
+                <elements:IconButton ButtonText="Edit" IconKind="Edit" IsEnabled="False" Margin="5"/>
+                <elements:IconButton ButtonText="Remove" IconKind="Remove" IsEnabled="False" Margin="5"/>
+                <elements:IconButton ButtonText="Delete" IconKind="Delete" IsEnabled="False" Margin="5"/>
+                <elements:IconButton ButtonText="Move Up" IconKind="ArrowUp" IsEnabled="False" Margin="5"/>
+                <elements:IconButton ButtonText="Move Down" IconKind="ArrowDown" IsEnabled="False" Margin="5"/>
             </StackPanel>
         
             <StackPanel Grid.Row="1" VerticalAlignment="Bottom" Margin="5">
                 <Grid ColumnDefinitions="*, *, *" HorizontalAlignment="Right">
-                    <Button Grid.Column="0" Background="Transparent">
-                        <avalonia:MaterialIcon Kind="Link" Width="24" Height="24"/>
+                    <Button Grid.Column="0" Background="Transparent" Click="ScreenCrowStudiosWebsite">
+                        <Panel>
+                            <avalonia:MaterialIcon Kind="LinkVariant" Width="24" Height="24"/>
+                            <ToolTip Tip="ScreenCrow Studios Website"/> 
+                        </Panel>
                     </Button>
                     
-                    <Button Grid.Column="1" Background="Transparent">
-                        <Image Source="avares://CrowToolkitProjectManager/Assets/ScreenCrowIcon.png" Width="24" Height="24"/>
+                    <Button Grid.Column="1" Background="Transparent" Click="CrowToolkitWebsite">
+                        <Panel>
+                            <avalonia:MaterialIcon Kind="Link" Width="24" Height="24"/>
+                            <ToolTip Tip="CrowToolkit Website"/> 
+                        </Panel>
                     </Button>
                     
-                    <Button Grid.Column="2" Background="Transparent">
-                        <avalonia:MaterialIcon Kind="Github" Width="24" Height="24"/>
+                    <Button Grid.Column="2" Background="Transparent" Click="GitHubRepository">
+                        <Panel>
+                            <avalonia:MaterialIcon Kind="Github" Width="24" Height="24"/>
+                            <ToolTip Tip="GitHub Repository"/> 
+                        </Panel>
                     </Button>
                 </Grid>
             

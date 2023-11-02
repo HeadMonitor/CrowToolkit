@@ -47,7 +47,9 @@
         <entry key="CrowToolkitProjectManager/App.axaml" value="CrowToolkitProjectManager/CrowToolkitProjectManager.csproj" />
         <entry key="CrowToolkitProjectManager/Elements/IconButton.axaml" value="CrowToolkitProjectManager/CrowToolkitProjectManager.csproj" />
         <entry key="CrowToolkitProjectManager/Styles/DragTabItem.axaml" value="CrowToolkitProjectManager/CrowToolkitProjectManager.csproj" />
+        <entry key="CrowToolkitProjectManager/Styles/IconButton.axaml" value="CrowToolkitProjectManager/CrowToolkitProjectManager.csproj" />
         <entry key="CrowToolkitProjectManager/Styles/MyTheme.axaml" value="CrowToolkitProjectManager/CrowToolkitProjectManager.csproj" />
+        <entry key="CrowToolkitProjectManager/Styles/ProjectItemStyle.axaml" value="CrowToolkitProjectManager/CrowToolkitProjectManager.csproj" />
         <entry key="CrowToolkitProjectManager/Styles/TabStyle.axaml" value="CrowToolkitProjectManager/CrowToolkitProjectManager.csproj" />
         <entry key="CrowToolkitProjectManager/Styles/TabsControl.axaml" value="CrowToolkitProjectManager/CrowToolkitProjectManager.csproj" />
         <entry key="CrowToolkitProjectManager/Views/MainWindow.axaml" value="CrowToolkitProjectManager/CrowToolkitProjectManager.csproj" />

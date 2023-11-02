@@ -8,7 +8,7 @@
         xmlns:views="clr-namespace:CrowEngineProjectManager.Views"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="CrowEngineProjectManager.Views.MainWindow"
-        Title="CrowToolkitProjectManager"
+        Title="CrowToolkit Project Manager"
         Background="#303030"
         x:DataType="viewModels:MainWindowTabsViewModel">
         

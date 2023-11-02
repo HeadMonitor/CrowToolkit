@@ -8,14 +8,18 @@
              x:Class="CrowEngineProjectManager.Views.ProjectItem"
              x:DataType="views:ProjectItem">
 
+    <UserControl.Styles>
+        <StyleInclude Source="/Styles/ProjectItemStyle.axaml" />
+    </UserControl.Styles>
+    
     <Grid RowDefinitions="*, *" VerticalAlignment="Top" Margin="5">
-        <Button Grid.Row="0" Background="Transparent" HorizontalAlignment="Stretch">
+        <Button Grid.Row="0" HorizontalAlignment="Stretch">
             <ScrollViewer VerticalScrollBarVisibility="Disabled" HorizontalScrollBarVisibility="Auto">
                 <Grid ColumnDefinitions="*, *, Auto" RowDefinitions="100" HorizontalAlignment="Left" Margin="5">
                     <!-- Favorite Button -->
-                    <Button Grid.Column="0" Background="Transparent" Margin="5">
+                    <ToggleButton Grid.Column="0" Background="Transparent" Margin="5">
                         <avalonia:MaterialIcon Kind="Star" />
-                    </Button>
+                    </ToggleButton>
                     
                     <!-- Project Icon -->
                     <Rectangle Grid.Column="1" Fill="White" Width="100" Height="100" />

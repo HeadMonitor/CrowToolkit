@@ -2,12 +2,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:controls="clr-namespace:Tabalonia.Controls;assembly=Tabalonia">
     <Design.PreviewWith>
-        <Border Padding="20">
-        </Border>
+        <Border Padding="20"/>
     </Design.PreviewWith>
     
     <Style Selector="controls|TabsControl">
-        
         <Setter Property="Background" Value="#303030"/>
     </Style>
     
