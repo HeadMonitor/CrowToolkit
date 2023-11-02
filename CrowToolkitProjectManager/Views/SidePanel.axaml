@@ -9,49 +9,42 @@
              Background="#1E1E1E"
              Width="200">
     
-    <Grid Margin="5">
-        <StackPanel VerticalAlignment="Top">
-            <!-- New Project Button -->
-            <elements:IconButton ButtonText="New Project" Margin="5"/>
+    <ScrollViewer>
+        <Grid RowDefinitions="*, *" Margin="5">
+            <StackPanel Grid.Row="0" VerticalAlignment="Top">
+                <elements:IconButton ButtonText="New Project" IconKind="Plus" Margin="5"/>
+                <elements:IconButton ButtonText="Import Project" IconKind="FileImport" Margin="5"/>
                 
-            <!-- Import Project Button -->
-            <Button HorizontalAlignment="Stretch" Margin="5">
-                <Grid ColumnDefinitions="Auto, 5, Auto">
-                    <avalonia:MaterialIcon Grid.Column="0" Kind="FileImport"/>
-                    <TextBlock Grid.Column="2" Text="Import Project"/>
-                </Grid>
-            </Button>
-                
-            <Separator/>
-                
-            <!-- Open Project Button -->
-            <Button HorizontalAlignment="Stretch" Margin="5">
-                <Grid ColumnDefinitions="Auto, 5, Auto">
-                    <avalonia:MaterialIcon Grid.Column="0" Kind="OpenInApp"/>
-                    <TextBlock Grid.Column="2" Text="Open"/>
-                </Grid>
-            </Button>
-                
-            <!-- Edit -->
-            <Button HorizontalAlignment="Stretch" Margin="5">
-                <Grid ColumnDefinitions="Auto, 5, Auto">
-                    <avalonia:MaterialIcon Grid.Column="0" Kind="Edit"/>
-                    <TextBlock Grid.Column="2" Text="Edit"/>
-                </Grid>
-            </Button>
+                <Separator/>
             
-            <!-- Delete Project Button -->
-            <Button HorizontalAlignment="Stretch" Margin="5">
-                <Grid ColumnDefinitions="Auto, 5, Auto">
-                    <avalonia:MaterialIcon Grid.Column="0" Kind="Delete"/>
-                    <TextBlock Grid.Column="2" Text="Delete"/>
-                </Grid>
-            </Button>
-        </StackPanel>
+                <elements:IconButton ButtonText="Open" IconKind="OpenInApp" Margin="5"/>
+                <elements:IconButton ButtonText="Edit" IconKind="Edit" Margin="5"/>
+                <elements:IconButton ButtonText="Remove" IconKind="Remove" Margin="5"/>
+                <elements:IconButton ButtonText="Delete" IconKind="Delete" Margin="5"/>
+                <elements:IconButton ButtonText="Move Up" IconKind="ArrowUp" Margin="5"/>
+                <elements:IconButton ButtonText="Move Down" IconKind="ArrowDown" Margin="5"/>
+            </StackPanel>
         
-        <!-- Version -->
-        <TextBlock Foreground="DarkSlateGray" VerticalAlignment="Bottom" Margin="5">
-            CrowToolkit Version 1.0.0
-        </TextBlock>
-    </Grid>
+            <StackPanel Grid.Row="1" VerticalAlignment="Bottom" Margin="5">
+                <Grid ColumnDefinitions="*, *, *" HorizontalAlignment="Right">
+                    <Button Grid.Column="0" Background="Transparent">
+                        <avalonia:MaterialIcon Kind="Link" Width="24" Height="24"/>
+                    </Button>
+                    
+                    <Button Grid.Column="1" Background="Transparent">
+                        <Image Source="avares://CrowToolkitProjectManager/Assets/ScreenCrowIcon.png" Width="24" Height="24"/>
+                    </Button>
+                    
+                    <Button Grid.Column="2" Background="Transparent">
+                        <avalonia:MaterialIcon Kind="Github" Width="24" Height="24"/>
+                    </Button>
+                </Grid>
+            
+                <!-- Version -->
+                <TextBlock HorizontalAlignment="Center" Foreground="DarkSlateGray" >
+                    CrowToolkit Version 1.0.0
+                </TextBlock>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
 </UserControl>

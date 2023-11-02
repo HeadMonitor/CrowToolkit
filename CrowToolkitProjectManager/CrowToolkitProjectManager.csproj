@@ -49,5 +49,7 @@
       <AvaloniaResource Include="Assets\MonoGame.png" />
       <None Remove="Assets\OpenGL.png" />
       <AvaloniaResource Include="Assets\OpenGL.png" />
+      <None Remove="Assets\ScreenCrowIcon.png" />
+      <AvaloniaResource Include="Assets\ScreenCrowIcon.png" />
     </ItemGroup>
 </Project>

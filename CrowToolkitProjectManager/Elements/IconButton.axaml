@@ -8,7 +8,7 @@
              x:Class="CrowEngineProjectManager.Elements.IconButton"
              x:DataType="elements:IconButton">
 
-    <Button Name="ButtonElement" Click="{Binding ButtonClick}">
+    <Button HorizontalAlignment="Stretch" Name="ButtonElement">
         <Grid ColumnDefinitions="Auto, 5, Auto">
             <avalonia:MaterialIcon Grid.Column="0" Kind="{Binding IconKind}"/>
             <TextBlock Grid.Column="2" Text="{Binding ButtonText}"/>
