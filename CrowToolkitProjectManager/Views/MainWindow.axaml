@@ -9,6 +9,7 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="CrowEngineProjectManager.Views.MainWindow"
         Title="CrowToolkit Project Manager"
+        Icon="avares://CrowToolkitProjectManager/Assets/CrowToolkitLogo.png"
         Background="#303030"
         x:DataType="viewModels:MainWindowTabsViewModel">
         

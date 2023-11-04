@@ -2,17 +2,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:avalonia="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
              xmlns:elements="clr-namespace:CrowEngineProjectManager.Elements"
+             xmlns:views="clr-namespace:CrowEngineProjectManager.Views"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="CrowEngineProjectManager.Views.SidePanel"
              Background="#1E1E1E"
-             Width="200">
+             Width="200"
+             x:DataType="views:SidePanel">
     
     <ScrollViewer>
         <Grid RowDefinitions="*, *" Margin="5">
             <StackPanel Grid.Row="0" VerticalAlignment="Top">
-                <elements:IconButton ButtonText="New Project" IconKind="Plus" Margin="5"/>
+                <elements:IconButton ButtonText="New Project" IconKind="Plus" Click="NewProject" Margin="5"/>
                 <elements:IconButton ButtonText="Import Project" IconKind="FileImport" Margin="5"/>
                 
                 <Separator/>
@@ -27,26 +28,9 @@
         
             <StackPanel Grid.Row="1" VerticalAlignment="Bottom" Margin="5">
                 <Grid ColumnDefinitions="*, *, *" HorizontalAlignment="Right">
-                    <Button Grid.Column="0" Background="Transparent" Click="ScreenCrowStudiosWebsite">
-                        <Panel>
-                            <avalonia:MaterialIcon Kind="LinkVariant" Width="24" Height="24"/>
-                            <ToolTip Tip="ScreenCrow Studios Website"/> 
-                        </Panel>
-                    </Button>
-                    
-                    <Button Grid.Column="1" Background="Transparent" Click="CrowToolkitWebsite">
-                        <Panel>
-                            <avalonia:MaterialIcon Kind="Link" Width="24" Height="24"/>
-                            <ToolTip Tip="CrowToolkit Website"/> 
-                        </Panel>
-                    </Button>
-                    
-                    <Button Grid.Column="2" Background="Transparent" Click="GitHubRepository">
-                        <Panel>
-                            <avalonia:MaterialIcon Kind="Github" Width="24" Height="24"/>
-                            <ToolTip Tip="GitHub Repository"/> 
-                        </Panel>
-                    </Button>
+                    <elements:LinkButton Grid.Column="0" IconKind="LinkVariant"/>
+                    <elements:LinkButton Grid.Column="1" IconKind="Link"/>
+                    <elements:LinkButton Grid.Column="2" IconKind="GitHub"/>
                 </Grid>
             
                 <!-- Version -->

@@ -14,7 +14,7 @@ public partial class SidePanel : UserControl
         InitializeComponent();
     }
     
-    private void OnNewProjectButtonClicked(object sender, RoutedEventArgs e)
+    private void NewProject(object sender, RoutedEventArgs e)
     {
         var mainWindow = this.GetLogicalAncestors().OfType<MainWindow>().FirstOrDefault();
 

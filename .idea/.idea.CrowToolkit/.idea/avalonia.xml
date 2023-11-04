@@ -46,8 +46,11 @@
         <entry key="CrowToolkitEditor/Views/Navbar.axaml" value="CrowToolkitEditor/CrowToolkitEditor.csproj" />
         <entry key="CrowToolkitProjectManager/App.axaml" value="CrowToolkitProjectManager/CrowToolkitProjectManager.csproj" />
         <entry key="CrowToolkitProjectManager/Elements/IconButton.axaml" value="CrowToolkitProjectManager/CrowToolkitProjectManager.csproj" />
+        <entry key="CrowToolkitProjectManager/Elements/LinkButton.axaml" value="CrowToolkitProjectManager/CrowToolkitProjectManager.csproj" />
+        <entry key="CrowToolkitProjectManager/Elements/TemplatedControl1.axaml" value="CrowToolkitProjectManager/CrowToolkitProjectManager.csproj" />
         <entry key="CrowToolkitProjectManager/Styles/DragTabItem.axaml" value="CrowToolkitProjectManager/CrowToolkitProjectManager.csproj" />
         <entry key="CrowToolkitProjectManager/Styles/IconButton.axaml" value="CrowToolkitProjectManager/CrowToolkitProjectManager.csproj" />
+        <entry key="CrowToolkitProjectManager/Styles/LinkButton.axaml" value="CrowToolkitProjectManager/CrowToolkitProjectManager.csproj" />
         <entry key="CrowToolkitProjectManager/Styles/MyTheme.axaml" value="CrowToolkitProjectManager/CrowToolkitProjectManager.csproj" />
         <entry key="CrowToolkitProjectManager/Styles/ProjectItemStyle.axaml" value="CrowToolkitProjectManager/CrowToolkitProjectManager.csproj" />
         <entry key="CrowToolkitProjectManager/Styles/TabStyle.axaml" value="CrowToolkitProjectManager/CrowToolkitProjectManager.csproj" />

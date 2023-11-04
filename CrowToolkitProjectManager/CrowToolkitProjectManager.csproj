@@ -29,6 +29,10 @@
         <DependentUpon>MainWindow.axaml</DependentUpon>
         <SubType>Code</SubType>
       </Compile>
+      <Compile Update="Elements\LinkButton.axaml.cs">
+        <DependentUpon>LinkButton.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
     </ItemGroup>
 
 
@@ -51,5 +55,7 @@
       <AvaloniaResource Include="Assets\OpenGL.png" />
       <None Remove="Assets\ScreenCrowIcon.png" />
       <AvaloniaResource Include="Assets\ScreenCrowIcon.png" />
+      <None Remove="Assets\CrowToolkitLogo.png" />
+      <AvaloniaResource Include="Assets\CrowToolkitLogo.png" />
     </ItemGroup>
 </Project>

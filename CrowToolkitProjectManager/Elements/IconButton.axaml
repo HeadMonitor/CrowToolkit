@@ -1,4 +1,4 @@
-﻿<UserControl xmlns="https://github.com/avaloniaui"
+﻿<Button xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -6,12 +6,11 @@
              xmlns:elements="clr-namespace:CrowEngineProjectManager.Elements"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="CrowEngineProjectManager.Elements.IconButton"
-             x:DataType="elements:IconButton">
-
-    <Button HorizontalAlignment="Stretch" Name="ButtonElement">
-        <Grid ColumnDefinitions="Auto, 5, Auto">
-            <avalonia:MaterialIcon Grid.Column="0" Kind="{Binding IconKind}"/>
-            <TextBlock Grid.Column="2" Text="{Binding ButtonText}"/>
-        </Grid>
-    </Button>
-</UserControl>
+             x:DataType="elements:IconButton"
+             HorizontalAlignment="Stretch">
+    
+    <Grid ColumnDefinitions="Auto, 5, Auto">
+        <avalonia:MaterialIcon Grid.Column="0" Kind="{Binding IconKind}"/>
+        <TextBlock Grid.Column="2" Text="{Binding ButtonText}"/>
+    </Grid>
+</Button>

@@ -4,8 +4,10 @@ using Avalonia.Controls;
 
 namespace CrowEngineProjectManager.Elements;
 
-public partial class IconButton : UserControl
+public partial class IconButton : Button
 {
+    
+    protected override Type StyleKeyOverride => typeof(Button);
     
     public static readonly StyledProperty<Action> ButtonClickProperty =
         AvaloniaProperty.Register<IconButton, Action>(nameof(ButtonClick));
