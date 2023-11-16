@@ -1,4 +1,4 @@
-![image](https://github.com/ScreenCrowStudios/CrowToolkit/assets/62361708/e8dad757-ca6a-4ca7-9535-7200944e1685)﻿## Frameworks In Use
+# CrowToolkit
 
 **WARNING:** This Repository is currently under construction and the application is by no means near done.
 
