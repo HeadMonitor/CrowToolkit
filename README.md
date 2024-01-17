@@ -15,7 +15,3 @@
 - [AvaloniaUtils](https://github.com/AvaloniaUtils) for [DialogHost.Avalonia](https://github.com/AvaloniaUtils/DialogHost.Avalonia)
 
 <hr/>
-
-<p align="center">
-  <img src="https://github.com/ScreenCrowStudios/INSANITY/assets/62361708/57ae1731-ebb0-461f-a61d-4a1cc1e1b8c0" alt="ScreenCrow Studios Logo">
-</p>
